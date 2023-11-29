@@ -1,0 +1,16 @@
+@media (min-width: 700px) {
+	/* ANSWERS */
+
+	.answers {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	/* FOOTER */
+	.footer_miniblock_services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
