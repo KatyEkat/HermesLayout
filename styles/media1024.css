@@ -1,0 +1,132 @@
+@media (min-width: 1024px) {
+	/* HEADER */
+
+	.header-menu {
+		display: none;
+	}
+
+    .header-block{
+
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+	.header_desktop {
+		display: flex;
+        align-items: center;
+	}
+
+    ul{
+        list-style-type:  none;
+        display: flex;
+    }
+
+	.header_desktop-links {
+        display: flex;
+        gap: 35px;
+	}
+
+	.header_desktop-link {
+		color: #000;
+		font-family: "Montserrat";
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+	}
+
+    .header_desctop-arrow-link{
+        display: flex;
+        gap: 10px;
+    }
+
+	.header-btn {
+		background: #0091cd;
+		width: 198px;
+		height: 36px;
+		border: #0091cd;
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	/* DESCRIPTION */
+	.description_section {
+		display: flex;
+		align-items: center;
+	}
+
+	.description_section-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: clamp(770px, 78vw, 1440px);
+	}
+
+	/* STEPS */
+	.steps_section {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+	}
+
+	.steps_section-road-steps {
+		display: flex;
+	}
+
+	.steps_section-container {
+		width: clamp(770px, 70vw, 1440px);
+	}
+
+	.steps_miniblock {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		max-width: 100%;
+	}
+
+	.steps_miniblock-content {
+		display: flex;
+		text-align: left;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	/* ANSWERS */
+	.answers {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 30px;
+		margin-top: 50px;
+	}
+
+	.answers_card {
+		margin: 0;
+	}
+
+	/* FOOTER */
+	.footer_content {
+		max-width: 865px;
+	}
+
+	.footer_content {
+		justify-content: space-between;
+	}
+
+	.footer_miniblock_services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

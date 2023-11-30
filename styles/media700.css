@@ -1,10 +1,26 @@
 @media (min-width: 700px) {
-	/* ANSWERS */
+	/* DESCRIPTION */
+	.description_section {
+		padding: 0 34px;
+	}
 
+	/* STEPS */
+	.steps_section {
+		padding: 0 34px;
+	}
+
+	/* ANSWERS */
 	.answers {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.answers_card {
+		width: 370px;
+	}
+
+	.answers_img {
+		width: 370px;
 	}
 
 	/* FOOTER */
