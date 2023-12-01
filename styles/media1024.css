@@ -1,30 +1,41 @@
 @media (min-width: 1024px) {
+	/* padding-inline: 3rem; */
+
 	/* HEADER */
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.header-menu {
 		display: none;
 	}
 
-    .header-block{
+	.header-block {
+		justify-content: space-around;
+		padding: 0;
+		padding: 1vw;
+		width: clamp(900px, 70vw, 1170px);
 
-        justify-content: space-around;
-        padding: 0;
-        margin-top: 20px;
-    }
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.header-block-mob {
+		display: none;
+	}
 
 	.header_desktop {
 		display: flex;
-        align-items: center;
 	}
 
-    ul{
-        list-style-type:  none;
-        display: flex;
-    }
-
-	.header_desktop-links {
-        display: flex;
-        gap: 35px;
+	ul {
+		list-style-type: none;
+		display: flex;
+		gap: 35px;
 	}
 
 	.header_desktop-link {
@@ -34,13 +45,16 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-
+		cursor: pointer;
+	}
+	.header_desktop-link:hover{
+		color: #0091CD;
 	}
 
-    .header_desctop-arrow-link{
-        display: flex;
-        gap: 10px;
-    }
+	.header_desctop-arrow-link {
+		display: flex;
+		gap: 10px;
+	}
 
 	.header-btn {
 		background: #0091cd;
@@ -56,6 +70,47 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		cursor: pointer;
+
+	}
+
+	.btn:hover {
+		border: 1px solid #0091cd;
+		background: linear-gradient(180deg, #bbebff 0%, #00b4ff 98.96%);
+	}
+	.btn:active {
+		border: 1px solid #0177aa;
+		background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
+	}
+
+	/* SWIPER */
+
+	.swiper-block {
+		height: 393px;
+	}
+
+	.swiper_img-girl_mob {
+		display: none;
+	}
+	.swiper_img-girl_desc {
+		display: flex;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: block;
+	}
+
+	.swiper-btn-application-mob {
+		display: none;
+	}
+
+	/* MAIN */
+	.main_section {
+		/* margin-top: 35px; */
+	}
+
+	.main_section-container {
+		margin-top: 35px;
 	}
 
 	/* DESCRIPTION */
@@ -68,22 +123,27 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		width: clamp(770px, 78vw, 1440px);
+		max-width: 1170px;
 	}
 
 	/* STEPS */
 	.steps_section {
 		display: flex;
-		justify-content: space-around;
-		padding: 0;
+
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.steps_section-road-steps {
 		display: flex;
+		/* height: 421px; */
+		height: clamp(330px, 28vw, 421px);
+		margin-top: 50px;
+		width: fit-content;
 	}
 
 	.steps_section-container {
-		width: clamp(770px, 70vw, 1440px);
+		max-width: 1170px;
 	}
 
 	.steps_miniblock {

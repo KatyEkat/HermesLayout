@@ -1,11 +1,25 @@
 @media (min-width: 560px) {
-	/* ANSWERS */
+	/* HEADER */
+	.header-block {
+		padding: 2vw;
+	}
 
+	/* DESCRIPTION */
+	.description_section{
+		padding: 0 35px;
+	}
+
+	/* STEPS */
+	.steps_section{
+		padding: 0 35px;
+	}
+
+	/* ANSWERS */
 	.answers {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-        justify-content: center;
+		justify-content: center;
 	}
 
 	/* FOOTER */
@@ -19,6 +33,4 @@
 		width: 100%;
 		justify-content: space-around;
 	}
-
-	
 }

@@ -10,7 +10,11 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@500;700&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="../styles/swiper.css" />
 		<link rel="stylesheet" href="../styles/main.css" />
 		<link rel="stylesheet" href="../styles/media560.css" />
 		<link rel="stylesheet" href="../styles/media700.css" />
@@ -20,57 +24,116 @@
 	<body>
 		<header class="header">
 			<p class="header-blue_line"></p>
-			<div class="header-block">
+
+			<nav class="header-block-mob">
 				<img class="header-logo" src="../img/logo.svg" alt="logo" />
-				<img class="header-menu" src="../img/menu.svg" alt="menu" />
+				<!-- <img class="header-menu" src="../img/menu.svg" alt="menu" /> -->
 
-				<div class="header_desktop">
-					<ul class="header_desktop-links">
-						<li class="header_desktop-link header_desctop-arrow-link">
-							Наши услуги
-							<img src="../img/arrowDown.svg" alt="arrow" />
-						</li>
-						<li class="header_desktop-link header_desctop-arrow-link">
-							О нас
-							<img src="../img/arrowDown.svg" alt="arrow" />
-						</li>
-						<li class="header_desktop-link">
-							Онлайн обучение
+				<input id="burger__checkbox" type="checkbox" />
+				<label class="burger__label" for="burger__checkbox">
+					<img class="header-menu" src="../img/menu.svg" alt="menu" />
+				</label>
 
-						</li>
-						<li class="header_desktop-link">
-							Новости
-		
-						</li>
-						<li class="header_desktop-link">
-							Контакты
-						
-						</li>
-					</ul>
+				<ul class="header_mob-links header_desktop">
+					<li class="header_mob-link header_desctop-arrow-link">
+						Наши услуги
+						<img src="../img/arrowDown.svg" alt="arrow" />
+					</li>
+					<li class="header_mob-link header_desctop-arrow-link">
+						О нас
+						<img src="../img/arrowDown.svg" alt="arrow" />
+					</li>
+					<li class="header_mob-link">Онлайн обучение</li>
+					<li class="header_mob-link">Новости</li>
+					<li class="header_mob-link">Контакты</li>
+				</ul>
 
-					<button class="header-btn">
-						Оставить заявку
-						<img class="" src="../img/buttonIcon.svg" alt="btnIcon" />
-					</button>
-				</div>
-			</div>
+				<!-- <button class="header-btn btn header_mob">
+					Оставить заявку
+					<img src="../img/btnIconWhite.svg" alt="btnIcon" />
+				</button> -->
+			</nav>
+
+			<nav class="header-block">
+				<img class="header-logo" src="../img/logo.svg" alt="logo" />
+				<!-- <div class="header_desktop"> -->
+				<ul class="header_desktop-links header_desktop">
+					<li class="header_desktop-link header_desctop-arrow-link">
+						Наши услуги
+						<img src="../img/arrowDown.svg" alt="arrow" />
+					</li>
+					<li class="header_desktop-link header_desctop-arrow-link">
+						О нас
+						<img src="../img/arrowDown.svg" alt="arrow" />
+					</li>
+					<li class="header_desktop-link">Онлайн обучение</li>
+					<li class="header_desktop-link">Новости</li>
+					<li class="header_desktop-link">Контакты</li>
+				</ul>
+
+				<button class="header-btn btn header_desktop">
+					Оставить заявку
+					<img src="../img/btnIconWhite.svg" alt="btnIcon" />
+				</button>
+				<!-- </div> -->
+			</nav>
 		</header>
 
 		<section class="main_section">
 			<div class="main_section-container">
-				<!-- <div class="main_section-images">
-					<img class="main_section-bgr-girl" src="../img/main/girlBgr.png" alt="bgr girl">
-					<svg class="main_section-bgr-conus" width="154" height="214" viewBox="0 0 154 214" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<rect width="138" height="168" transform="matrix(-0.615661 0.788011 -0.782621 -0.622498 154 105)" fill="url(#pattern0)" fill-opacity="0.5"/>
-						<defs>
-						<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-						<use xlink:href="#image0_99_12962" transform="matrix(0.002079 0 0 0.00170775 0 -0.0123256)"/>
-						</pattern>
-						</defs>
-						</svg>
-						
-					  </svg>
-				</div> -->
+				<div class="swiper-block">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									class="swiper_img swiper_img-girl_mob"
+									src="../img/main/girlMob.png"
+									alt=""
+								/>
+								<img
+									class="swiper_img swiper_img-girl_desc"
+									src="../img/main/girlBgr.png"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									class="swiper_img"
+									src="../img/main/motorcycle.png"
+									alt=""
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img class="swiper_img" src="../img/main/man.png" alt="" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+
+				<!-- <div class="main_bgr"> -->
+
+					<img class="main_bgr-konus-small" src="../img/main/konusSmall.png" alt="konus">
+
+
+					<div class="swiper_miniblock-mobile">
+						<img class="swiper_miniblock_blue-bgr-mob" src="../img/main/swiper-blue-mob.png" alt="bgr">
+						<h1 class="swiper_miniblock_header">Автошкола</h1>
+						<p class="swiper_miniblock_description">Курсы вождения на автомобиле и мотоцикле - стань профи, получи права! Онлайн и оффлайн обучение водителей категории А, В, С и D. Оборудованные учебные классы и автодромы возле метро. Практика по экзаменационным маршрутам ГИБДД</p>
+						<img class="swiper_miniblock_img" src="../img/main/konusBig.png" alt="kunus">
+					</div>
+
+					<img class="main_bgr-konus-big" src="../img/main/konusBig.png" alt="konus">
+					<button class="btn swiper-btn-application-mob">
+						Оставить заявку
+						<img
+							class="swiper-btn-img"
+							src="../img/buttonIcon.svg"
+							alt="btnIcon"
+						/>
+					</button>
+				<!-- </div> -->
 			</div>
 		</section>
 
@@ -126,16 +189,13 @@
 		</section>
 
 		<section class="steps_section">
-			<!-- <img
-				class="steps_section-bgr-car"
-				src="../img/steps/carBgr.png"
-				alt="bgrCar"
-			/> -->
-			<!-- <img
+			<div class="steps_section-bgr-car"></div>
+
+			<img
 				class="steps_section-road-steps"
 				src="../img/steps/roadSteps.png"
 				alt="road steps"
-			/> -->
+			/>
 			<div class="steps_section-container">
 				<h2 class="steps_section-heading">7 шагов получения прав:</h2>
 				<p class="steps_section-blue-line"></p>
@@ -360,5 +420,16 @@
 			<p class="footer_line_c"></p>
 			<p class="footer_c">© 2023 Hermes</p>
 		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
 	</body>
 </html>

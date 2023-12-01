@@ -1,12 +1,16 @@
 @media (min-width: 700px) {
-	/* DESCRIPTION */
-	.description_section {
-		padding: 0 34px;
+	/* SWIPER  */
+
+	.swiper-slide img {
+		transform: translate(-50%, -50%);
+	}
+
+	.swiper_miniblock_img{
+		display: none;
 	}
 
 	/* STEPS */
 	.steps_section {
-		padding: 0 34px;
 	}
 
 	/* ANSWERS */
