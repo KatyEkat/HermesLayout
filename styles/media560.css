@@ -4,6 +4,14 @@
 		padding: 2vw;
 	}
 
+	.swiper-btn-application-mob {
+		left: 30%;
+	}
+
+	.main_bgr-konus-big{
+		transform: rotate(-8.512deg);
+	}
+
 	/* DESCRIPTION */
 	.description_section{
 		padding: 0 35px;

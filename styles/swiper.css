@@ -17,7 +17,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden; /* Добавляем обрезку контента, выходящего за пределы слайда */
+	overflow: hidden;
 	position: relative;
 }
 
@@ -28,17 +28,31 @@
 	object-fit: cover;
 } */
 
-.swiper-slide img {
-	position: absolute; /* Позиционируем изображение абсолютно внутри слайда */
-	top: 50%; /* Размещаем изображение по вертикали по центру слайда */
-	left: 50%; /* Размещаем изображение по горизонтали по центру слайда */
+.swiper-slide .swiper_img-girl_mob {
+	position: absolute;
+	top: 60%; 
+	left: 50%; 
 	transform: translate(
 		-60%,
 		-50%
-	); /* Центрируем изображение точно по центру слайда */
+	);
 	min-width: 100%;
 	min-height: 100%;
 }
+
+ .swiper_img {
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(
+		-60%,
+		-50%
+	);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
 
 .swiper_img-girl_desc{
     display: none;
