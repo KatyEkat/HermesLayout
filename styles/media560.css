@@ -8,17 +8,17 @@
 		left: 30%;
 	}
 
-	.main_bgr-konus-big{
+	.main_bgr-konus-big {
 		transform: rotate(-8.512deg);
 	}
 
 	/* DESCRIPTION */
-	.description_section{
+	.description_section {
 		padding: 0 35px;
 	}
 
 	/* STEPS */
-	.steps_section{
+	.steps_section {
 		padding: 0 35px;
 	}
 
@@ -40,5 +40,15 @@
 		flex-direction: row;
 		width: 100%;
 		justify-content: space-around;
+	}
+
+	/* ABOUT PAGE */
+
+	.about_img-mob {
+		display: none;
+	}
+
+	.about_img-desk {
+		display: flex;
 	}
 }
