@@ -275,7 +275,6 @@
 	left: 100%;
 }
 
-
 /* MAIN PAGE */
 .main_section {
 	overflow: hidden;
@@ -707,12 +706,10 @@
 	background: linear-gradient(180deg, #bbebff 0%, #00b4ff 98.96%);
 }
 
-
-
 /* PAGE ABOUT AUTOSCHOOL */
 .about_main_section {
 	padding-top: 80px;
-	background: #0091CD;	
+	background: #0091cd;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -724,10 +721,10 @@
 
 .about_main_images {
 	overflow: hidden;
-	background: #0091CD;
+	background: #0091cd;
 }
 
-.about_main_bgr-img-block-desk{
+.about_main_bgr-img-block-desk {
 	display: none;
 }
 
@@ -736,25 +733,24 @@
 	height: 675px;
 }
 
-
-.abouut_main_miniblock-konus{
+.abouut_main_miniblock-konus {
 	position: relative;
 }
 
 .about_main_konus-up {
-    position: absolute;
-    width: 67px;
-    transform: rotate(116deg);
-    bottom: 720px;
-    left: -9px;
+	position: absolute;
+	width: 67px;
+	transform: rotate(116deg);
+	bottom: 720px;
+	left: -9px;
 }
 
 .about_main_konus-down {
-    position: absolute;
-    width: 96px;
-    transform: rotate(325deg);
-    top: 3px;
-    right: -20px;
+	position: absolute;
+	width: 96px;
+	transform: rotate(325deg);
+	top: 3px;
+	right: -20px;
 }
 
 .about_main_header {
@@ -770,7 +766,7 @@
 	align-items: center;
 	height: 87px;
 	border-color: #0091cd;
-    border-bottom: solid 1px;
+	border-bottom: solid 1px;
 }
 
 .about_section {
@@ -828,8 +824,8 @@
 	gap: 10px;
 }
 
-.blue_line_about_main{
-	background:  #0091CD;
+.blue_line_about_main {
+	background: #0091cd;
 	height: 6px;
 }
 
@@ -847,26 +843,77 @@
 	display: none;
 }
 
-
 /* CLASSES */
 
-.class_block-imgs{
+.class_block-imgs {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 13px;
 }
 
-.class_img{
+.class_img {
 	width: clamp(270px, 60vw, 380px);
 	/* width: 380px; */
 }
 
-.class_img-mob{
+.class_img-mob {
 	display: none;
 }
 
-.class_img-vertical{
+.class_img-vertical {
 	width: 280px;
+}
+
+/* INSTRUCRURE */
+
+.instructure_block {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	gap: 12px;
+}
+
+.instructure_miniblock {
+	background: #f1f1f1;
+	width: clamp(270px, 60vw, 380px);
+}
+
+.instructure_miniblock-img {
+	width: clamp(270px, 60vw, 380px);
+	margin-bottom: 20px;
+}
+
+.instructure_miniblock-content {
+	margin: 0 14px;
+	height: 211px;
+}
+
+.instructure_miniblock-blue {
+	background: #0091cd;
+	width: 75px;
+	height: 2px;
+	margin-bottom: 13px;
+}
+
+.instructure_miniblock-header {
+	color: #0091cd;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.instructure_miniblock-description {
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: clamp(220px, 60vw, 351px);
 }
