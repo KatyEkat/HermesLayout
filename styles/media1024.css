@@ -231,7 +231,7 @@
 		height: 76px;
 	}
 
-	.about_main_block{
+	.about_main_block {
 		width: clamp(700px, 95vw, 1170px);
 	}
 
@@ -257,7 +257,7 @@
 		margin-top: 50px;
 	}
 
-	.about_main_bgr-img-blue{
+	.about_main_bgr-img-blue {
 		z-index: 2;
 	}
 
@@ -265,14 +265,13 @@
 		transform: translate(-0%, -0%);
 	}
 
-
 	.about_main_konus-up {
 		bottom: 446px;
 		z-index: 10;
 		left: -22px;
 	}
 
-	.about_main_konus-down{
+	.about_main_konus-down {
 		transform: rotate(352deg);
 	}
 
@@ -280,6 +279,9 @@
 		padding-top: 34px;
 	}
 
+	/* CLASS */
 
-
+	.class_img-mob {
+		display: none;
+	}
 }

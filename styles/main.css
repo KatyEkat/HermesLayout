@@ -707,6 +707,8 @@
 	background: linear-gradient(180deg, #bbebff 0%, #00b4ff 98.96%);
 }
 
+
+
 /* PAGE ABOUT AUTOSCHOOL */
 .about_main_section {
 	padding-top: 80px;
@@ -843,4 +845,28 @@
 
 .about_img-desk {
 	display: none;
+}
+
+
+/* CLASSES */
+
+.class_block-imgs{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	gap: 13px;
+}
+
+.class_img{
+	width: clamp(270px, 60vw, 380px);
+	/* width: 380px; */
+}
+
+.class_img-mob{
+	display: none;
+}
+
+.class_img-vertical{
+	width: 280px;
 }

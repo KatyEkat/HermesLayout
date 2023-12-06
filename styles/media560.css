@@ -89,4 +89,9 @@
 	}
 
 
+	/* CLASSES */
+
+	.class_img-mob{
+		display: flex;
+	}
 }
