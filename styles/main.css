@@ -232,6 +232,50 @@
 	fill: #ebebec;
 }
 
+.header_desk_link-heading {
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-top: 40px;
+	text-decoration-line: underline;
+	text-decoration-color: #c4c4c6;
+	text-underline-offset: 8px;
+	margin-bottom: 24px;
+}
+
+.header_desk_link {
+	margin-bottom: 10px;
+}
+
+.header_desk_link-a {
+	text-decoration: none;
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.header_desk_sublinks {
+	position: relative;
+	list-style: none;
+	background: #ebebec;
+	width: clamp(278px, 53vw, 679px);
+	height: 434px;
+	padding: 0 35px;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+
 /* MAIN PAGE */
 .main_section {
 	overflow: hidden;
@@ -666,11 +710,8 @@
 /* PAGE ABOUT AUTOSCHOOL */
 .about_main_section {
 	padding-top: 80px;
-	/* padding: 0 7px; */
-	background: #0091CD;
-	
+	background: #0091CD;	
 	overflow: hidden;
-	/* padding-bottom: 30px; */
 	display: flex;
 	justify-content: center;
 }
@@ -696,11 +737,6 @@
 
 .abouut_main_miniblock-konus{
 	position: relative;
-}
-
-.about_main_miniblock {
-	/* position: relative; */
-
 }
 
 .about_main_konus-up {
@@ -731,7 +767,6 @@
 	justify-content: center;
 	align-items: center;
 	height: 87px;
-	/* margin-top: 6px; */
 	border-color: #0091cd;
     border-bottom: solid 1px;
 }
@@ -801,20 +836,8 @@
 }
 
 .about_img-mob {
-	/* position: absolute; */
-	/* top: 60%;
-    left: 50%;
-    transform: translate( -60%, -50% );
-    min-width: 100%;
-	min-height: 100%; */
-	/* height: 406px; */
-
-	/* transform: translate(-25%, -5%); */
-	/* min-width: 100%;
-	min-height: 100%; */
 	width: 100%;
 	height: 100%;
-
 	display: block;
 }
 
