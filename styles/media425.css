@@ -9,6 +9,11 @@
         height: 675px;
     }
 
+    .about_main_bgr-img-mob-instructure {
+        transform: translate(-10%, -0%);
+        height: 675px;
+    }
+
     .about_section {
         padding: 0 27px;
     }

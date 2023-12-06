@@ -246,6 +246,10 @@
 		height: 440px;
 	}
 
+	.about_main_bgr-img-desk-instructure{
+		transform: translate( 0%);
+	}
+
 	.about_block {
 		display: flex;
 		flex-direction: column;

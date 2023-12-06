@@ -64,6 +64,16 @@
 		display: none;
 	}
 
+	.about_main_bgr-img-mob-instructure {
+		display: none;
+    }
+
+	.about_main_bgr-img-desk-instructure{
+		transform: translate(-20%, 0%);
+		display: flex;
+
+	}
+
 	.about_main_konus-up {
 		bottom: 480px;
 		z-index: 10;

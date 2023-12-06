@@ -736,6 +736,11 @@
 	height: 675px;
 }
 
+.about_main_bgr-img-mob-instructure {
+    transform: translate(-30%, -0%);
+    height: 675px;
+}
+
 .abouut_main_miniblock-konus {
 	position: relative;
 }
