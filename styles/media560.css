@@ -60,6 +60,10 @@
 		display: none;
 	}
 
+	.about_main_bgr-img-mob-2{
+		display: none;
+	}
+
 	.about_main_konus-up {
 		bottom: 480px;
 		z-index: 10;
