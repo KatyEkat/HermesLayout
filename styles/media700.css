@@ -1,10 +1,5 @@
 @media (min-width: 700px) {
 	/* SWIPER  */
-
-	/* .swiper-slide img {
-		transform: translate(-50%, -50%);
-	} */
-
 	.swiper-slide .swiper_img-girl_mob {
 		transform: translate( -50%, -50% );
 	}
@@ -44,10 +39,23 @@
 
 
 	/* ABOUT PAGE */
-
-	.about_img-desk {
+	.about_main_bgr-img-block-desk {
 		display: flex;
         width: 100%;
 		transform: translate(-0%, -0%);
 	}
+
+	.about_main_section{
+		/* padding: 0 ; */
+	}
+
+	.about_main_bgr-img-desk {
+		transform: translate(0%, 0%);
+	}
+
+	.about_main_konus-down {
+		top: -56px;
+		right: -63px;
+	}
+
 }

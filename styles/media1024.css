@@ -1,8 +1,5 @@
 @media (min-width: 1024px) {
-	/* padding-inline: 3rem; */
-
 	/* HEADER */
-
 	.header {
 		display: flex;
 		flex-direction: column;
@@ -81,8 +78,7 @@
 		background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
 	}
 
-
-	.main_bgr{
+	.main_bgr {
 		display: flex;
 		align-items: flex-start;
 	}
@@ -97,7 +93,6 @@
 	}
 
 	/* SWIPER */
-
 	.swiper-block {
 		position: relative;
 		height: 393px;
@@ -123,11 +118,8 @@
 	}
 
 	.swiper-slide .swiper_img {
-		top: 50%; 
-		transform: translate(
-			-50%,
-			-50%
-		);
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.swiper_miniblock_blue-bgr-desc {
@@ -137,7 +129,7 @@
 		height: 401.714px;
 	}
 
-	.swiper_miniblock_text-content{
+	.swiper_miniblock_text-content {
 		margin-left: 60px;
 		margin-right: 77px;
 		top: -353px;
@@ -145,14 +137,13 @@
 	}
 
 	.swiper-slide .swiper_img {
-		top: 50%; 
+		top: 50%;
 		min-width: 0;
 		min-height: 0;
 	}
 
 	/* MAIN */
 	.main_section {
-		/* margin-top: 35px; */
 	}
 
 	.main_section-container {
@@ -182,7 +173,6 @@
 
 	.steps_section-road-steps {
 		display: flex;
-		/* height: 421px; */
 		height: clamp(330px, 28vw, 421px);
 		margin-top: 50px;
 		width: fit-content;
@@ -236,35 +226,60 @@
 		align-items: center;
 	}
 
-
 	/* ABOUT PAGE */
-
 	.about_main_header {
-
 		height: 76px;
 	}
 
+	.about_main_block{
+		width: clamp(700px, 95vw, 1170px);
+	}
 
 	.about_section {
-		/* overflow: hidden; */
-		padding: 0 ;
+		padding: 0 35px;
 		display: flex;
 		justify-content: center;
 	}
 
-	.about_block{
+	.about_main_bgr-img-desk {
+		transform: translate(0);
+		height: 440px;
+	}
+
+	.about_block {
 		display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 1170px;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 1170px;
 	}
 
 	.about_miniblock {
 		margin-top: 50px;
 	}
 
-	.about_img-desk{
-		transform: translate( -0%, -0% );
+	.about_main_bgr-img-blue{
+		z-index: 2;
 	}
+
+	.about_img-desk {
+		transform: translate(-0%, -0%);
+	}
+
+
+	.about_main_konus-up {
+		bottom: 446px;
+		z-index: 10;
+		left: -22px;
+	}
+
+	.about_main_konus-down{
+		transform: rotate(352deg);
+	}
+
+	.about_main_section {
+		padding-top: 34px;
+	}
+
+
 
 }

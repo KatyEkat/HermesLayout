@@ -43,6 +43,9 @@
 	}
 
 	/* ABOUT PAGE */
+	.about_main_block{
+		width: clamp(500px, 100vw, 1170px);
+	}
 
 	.about_img-mob {
 		display: none;
@@ -50,5 +53,40 @@
 
 	.about_img-desk {
 		display: flex;
+		width: clamp(700px, 95vw, 1170px);
 	}
+
+	.about_main_bgr-img-mob{
+		display: none;
+	}
+
+	.about_main_konus-up {
+		bottom: 480px;
+		z-index: 10;
+	}
+
+	.about_main_konus-down {
+		position: absolute;
+		transform: rotate(325deg);
+		top: -55px;
+		right: -20px;
+		width: 167px;
+	}
+	
+	.about_main_bgr-img-block-desk{
+		display: flex;
+	}
+
+	.about_main_bgr-img-blue{
+		width: 100%;
+		height: 150px;
+		position: absolute;
+	}
+
+	.about_main_bgr-img-desk{
+		transform: translate(-20%, -0%);
+		height: 440px;
+	}
+
+
 }
