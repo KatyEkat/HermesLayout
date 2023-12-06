@@ -732,6 +732,11 @@
 	transform: translate(-20%, -0%);
 	height: 675px;
 }
+
+.about_main_bgr-img-mob-classes {
+	transform: translate( -0%);
+	height: 675px;
+}
 .about_main_bgr-img-mob-2 {
 	height: 675px;
 }
