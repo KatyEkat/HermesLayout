@@ -917,3 +917,18 @@
 	line-height: normal;
 	width: clamp(220px, 60vw, 351px);
 }
+
+
+/* AUTOPARK */
+
+.autopark_miniblock{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	gap: 12px;
+}
+
+.autopark_img{
+	width: clamp(270px, 60vw, 380px);
+}
