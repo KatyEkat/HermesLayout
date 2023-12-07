@@ -709,7 +709,7 @@
 	justify-content: center;
 }
 
-.price-miniblock-description{
+.price-miniblock-description {
 	width: clamp(270px, 90vw, 1170px);
 }
 
@@ -729,11 +729,15 @@
 	width: 100%;
 }
 
-.price_block_loc{
+.price_block_loc {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
+}
 
+.price_block-height {
+	height: 410px;
+	width: clamp(270px, 80vw, 368px);
 }
 
 .price-block-big {
@@ -758,10 +762,10 @@
 	text-underline-offset: 13px;
 }
 
-.price_block-location{
+.price_block-location {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .price_miniblock {
@@ -815,10 +819,9 @@
 	display: flex;
 }
 
-.price_white-line-desk{
+.price_white-line-desk {
 	display: none;
 }
-
 
 .price-button {
 	color: #0091cd;
@@ -838,6 +841,22 @@
 	align-items: center;
 	gap: 10px;
 	margin: 30px 20px;
+	height: 32px;
+}
+
+.price-button:hover {
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	background: #0091cd;
+}
+
+.price-button:active {
+	border: 1px solid #0177aa;
+	background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
 }
 
 /* PAGE ABOUT AUTOSCHOOL */
@@ -872,12 +891,12 @@
 	height: 675px;
 }
 
-.about_main_bgr-img-mob-catB{
+.about_main_bgr-img-mob-catB {
 	transform: translate(-30%);
 	height: 675px;
 }
 
-.about_main_bgr-img-mob-catCD{
+.about_main_bgr-img-mob-catCD {
 	transform: translate(-10%);
 	height: 675px;
 }
@@ -936,7 +955,11 @@
 }
 
 .about_miniblock {
-	margin-top: 30px;
+	/* margin-top: 30px; */
+}
+
+.descr_block {
+	width: clamp(270px, 90vw, 1170px);
 }
 
 .about_header {
@@ -1087,5 +1110,3 @@
 .autopark_img {
 	width: clamp(270px, 60vw, 380px);
 }
-
-
