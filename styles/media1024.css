@@ -250,6 +250,10 @@
 		transform: translate( 0%);
 	}
 
+	.about_main_bgr-img-desk-catB{
+		transform: translate( 0%);
+	}
+
 	.about_block {
 		display: flex;
 		flex-direction: column;
@@ -288,4 +292,12 @@
 	.class_img-mob {
 		display: none;
 	}
+
+	.price-block-big {
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+
 }
