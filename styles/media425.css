@@ -29,6 +29,11 @@
         height: 675px;
     }
 
+    .about_main_bgr-img-mob-catA {
+        transform: translate(-10%);
+        height: 675px;
+    }
+
     .about_section {
         padding: 0 27px;
     }

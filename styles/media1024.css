@@ -246,17 +246,20 @@
 		height: 440px;
 	}
 
-	.about_main_bgr-img-desk-instructure{
-		transform: translate( 0%);
+	.about_main_bgr-img-desk-instructure {
+		transform: translate(0%);
 	}
 
-	.about_main_bgr-img-desk-catB{
-		transform: translate( 0%);
+	.about_main_bgr-img-desk-catB {
+		transform: translate(0%);
 	}
 
 	.about_main_bgr-img-desk-catCD {
-		display: flex;
-		transform: translate( 0%);
+		transform: translate(0%);
+	}
+
+	.about_main_bgr-img-desk-catA {
+		transform: translate(0%);
 	}
 
 	.about_block {
@@ -303,6 +306,4 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-
-
 }

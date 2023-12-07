@@ -79,6 +79,15 @@
 		display: none;
 	}
 
+	.about_main_bgr-img-mob-catA{
+		display: none;
+	}
+
+	.about_main_bgr-img-desk-catA{
+		display: flex;
+		transform: translate(-10%, 0%);
+	}
+
 	.about_main_bgr-img-desk-catB {
 		display: flex;
 		transform: translate(-20%, 0%);
