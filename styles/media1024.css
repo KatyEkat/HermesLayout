@@ -258,7 +258,15 @@
 		transform: translate(0%);
 	}
 
+	.about_main_bgr-img-desk-avia {
+		transform: translate(-0%);
+	}
+
 	.about_main_bgr-img-desk-catA {
+		transform: translate(0%);
+	}
+
+	.about_main_bgr-img-desk-train {
 		transform: translate(0%);
 	}
 

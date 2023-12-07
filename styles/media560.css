@@ -79,11 +79,24 @@
 		display: none;
 	}
 
-	.about_main_bgr-img-mob-catA{
+	.about_main_bgr-img-mob-catA {
 		display: none;
 	}
 
-	.about_main_bgr-img-desk-catA{
+	.about_main_bgr-img-mob-auto {
+		display: none;
+	}
+
+	.about_main_bgr-img-mob-avia{
+		display: none;
+	}
+
+	.about_main_bgr-img-desk-auto {
+		display: flex;
+		transform: translate(-10%, 0%);
+	}
+
+	.about_main_bgr-img-desk-catA {
 		display: flex;
 		transform: translate(-10%, 0%);
 	}
@@ -100,6 +113,11 @@
 
 	.about_main_bgr-img-desk-instructure {
 		transform: translate(-20%, 0%);
+		display: flex;
+	}
+
+	.about_main_bgr-img-desk-avia{
+		transform: translate(-40%, -0%);
 		display: flex;
 	}
 
@@ -121,6 +139,11 @@
 		width: 167px;
 	}
 
+	.about_main_img-down {
+		top: 45px;
+		right: -18px;
+	}
+
 	.about_main_bgr-img-block-desk {
 		display: flex;
 	}
@@ -134,6 +157,11 @@
 	.about_main_bgr-img-desk {
 		transform: translate(-20%, -0%);
 		height: 440px;
+	}
+
+	.about_main_bgr-img-desk-train {
+		display: flex;
+		transform: translate(-20%, 0%);
 	}
 
 	/* CLASSES */

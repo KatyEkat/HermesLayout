@@ -915,12 +915,33 @@
     height: 675px;
 }
 
+.about_main_bgr-img-mob-auto {
+    transform: translate(-20%);
+    height: 675px;
+}
+
+.about_main_bgr-img-desk-auto{
+	display: none;
+}
+
+.about_main_bgr-img-desk-train{
+	display: none;
+}
+
+.about_main_bgr-img-desk-avia{
+	display: none;
+}
+
 .about_main_bgr-img-mob-2 {
 	height: 675px;
 }
 
 .about_main_bgr-img-mob-instructure {
 	transform: translate(-30%, -0%);
+	height: 675px;
+}
+
+.about_main_bgr-img-mob-avia{
 	height: 675px;
 }
 
@@ -942,6 +963,13 @@
 	transform: rotate(325deg);
 	top: 3px;
 	right: -20px;
+}
+
+.about_main_img-down{
+	position: absolute;
+	width: 96px;
+	top: 3px;
+	right: -40px;
 }
 
 .about_main_header {

@@ -62,11 +62,27 @@
 	.about_main_bgr-img-desk-catCD {
 		transform: translate(-10%, 0%);
 	}
-	
+	.about_main_bgr-img-desk-auto{
+		transform: translate(0%);
+	}
+
+	.about_main_bgr-img-desk-train {
+		transform: translate(-10%, 0%);
+	}
+
+	.about_main_bgr-img-desk-avia{
+		transform: translate(-10%, -0%);
+	}
 
 	.about_main_konus-down {
 		top: -56px;
 		right: -63px;
+	}
+
+	.about_main_img-down {
+		width: 215px;
+		top: 45px;
+		right: -18px;
 	}
 
 		/* PRICE */

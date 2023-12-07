@@ -2,36 +2,33 @@
 
     .about_main_bgr-img-mob {
         transform: translate(-10%, -0%);
-        height: 675px;
     }
 
     .about_main_bgr-img-mob-2{
-        height: 675px;
     }
 
     .about_main_bgr-img-mob-instructure {
         transform: translate(-10%, -0%);
-        height: 675px;
     }
 
     .about_main_bgr-img-desk-classes {
 		transform: translate(-10%, -0%);
-		height: 675px;
 	}
 
     .about_main_bgr-img-mob-catB{
         transform: translate(-10%);
-        height: 675px;
     }
 
     .about_main_bgr-img-mob-catCD{
         transform: translate(0%);
-        height: 675px;
     }
 
     .about_main_bgr-img-mob-catA {
         transform: translate(-10%);
-        height: 675px;
+    }
+
+    .about_main_bgr-img-mob-auto {
+        transform: translate(-10%);
     }
 
     .about_section {
