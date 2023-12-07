@@ -71,11 +71,20 @@
 		display: none;
 	}
 
-	.about_main_bgr-img-mob-catB{
+	.about_main_bgr-img-mob-catB {
 		display: none;
-    }
+	}
 
-	.about_main_bgr-img-desk-catB{
+	.about_main_bgr-img-mob-catCD {
+		display: none;
+	}
+
+	.about_main_bgr-img-desk-catB {
+		display: flex;
+		transform: translate(-20%, 0%);
+	}
+
+	.about_main_bgr-img-desk-catCD {
 		display: flex;
 		transform: translate(-20%, 0%);
 	}

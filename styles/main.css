@@ -741,7 +741,6 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
-	/* width: clamp(270px, 61vw, 560px); */
 }
 
 .price_heading {
@@ -814,7 +813,6 @@
 	height: 1px;
 	margin-top: 24px;
 	display: flex;
-	/* margin-bottom: 24px; */
 }
 
 .price_white-line-desk{
@@ -874,12 +872,13 @@
 	height: 675px;
 }
 
-/* .about_main_bgr-img-block-desk {
-    display: none;
-} */
-
 .about_main_bgr-img-mob-catB{
 	transform: translate(-30%);
+	height: 675px;
+}
+
+.about_main_bgr-img-mob-catCD{
+	transform: translate(-10%);
 	height: 675px;
 }
 
@@ -964,7 +963,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .about_list {
@@ -1014,7 +1013,6 @@
 
 .class_img {
 	width: clamp(270px, 60vw, 380px);
-	/* width: 380px; */
 }
 
 .class_img-mob {
@@ -1026,7 +1024,6 @@
 }
 
 /* INSTRUCRURE */
-
 .instructure_block {
 	display: flex;
 	flex-wrap: wrap;
@@ -1090,3 +1087,5 @@
 .autopark_img {
 	width: clamp(270px, 60vw, 380px);
 }
+
+

@@ -44,10 +44,6 @@
 		transform: translate(-0%, -0%);
 	}
 
-	.about_main_section {
-		/* padding: 0 ; */
-	}
-
 	.about_main_bgr-img-desk {
 		transform: translate(0%, 0%);
 	}
@@ -63,6 +59,10 @@
 		transform: translate(0%, 0%);
 	}
 
+	.about_main_bgr-img-desk-catCD {
+		transform: translate(-10%, 0%);
+	}
+
 	.about_main_konus-down {
 		top: -56px;
 		right: -63px;
@@ -71,10 +71,8 @@
 		/* PRICE */
 
 		.price_block-location {
-			/* width: clamp(270px, 60vw, 560px); */
 			display: flex;
 			margin: 0 50px;
-			/* padding: 0 50px; */
 			gap: 24px;
 			flex-direction: row;
 			align-items: flex-end;

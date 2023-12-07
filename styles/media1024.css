@@ -254,6 +254,11 @@
 		transform: translate( 0%);
 	}
 
+	.about_main_bgr-img-desk-catCD {
+		display: flex;
+		transform: translate( 0%);
+	}
+
 	.about_block {
 		display: flex;
 		flex-direction: column;
