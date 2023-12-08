@@ -48,7 +48,7 @@
 		transform: translate(0%, 0%);
 	}
 
-	.about_main_bgr-img-desk-catB{
+	.about_main_bgr-img-desk-catB {
 		transform: translate(-10%, 0%);
 	}
 
@@ -62,7 +62,7 @@
 	.about_main_bgr-img-desk-catCD {
 		transform: translate(-10%, 0%);
 	}
-	.about_main_bgr-img-desk-auto{
+	.about_main_bgr-img-desk-auto {
 		transform: translate(0%);
 	}
 
@@ -70,7 +70,7 @@
 		transform: translate(-10%, 0%);
 	}
 
-	.about_main_bgr-img-desk-avia{
+	.about_main_bgr-img-desk-avia {
 		transform: translate(-10%, -0%);
 	}
 
@@ -85,24 +85,30 @@
 		right: -18px;
 	}
 
-		/* PRICE */
+	/* PRICE */
 
-		.price_block-location {
-			display: flex;
-			margin: 0 50px;
-			gap: 24px;
-			flex-direction: row;
-			align-items: flex-end;
-		}
-	
-		.price_white-line-mob{
-			display: none;
-		}
-	
-		.price_white-line-desk {
-			display: flex;
-			background: #fff;
-			width: 1px;
-			height: 215px;
-		}
+	.price_block-location {
+		display: flex;
+		margin: 0 50px;
+		gap: 24px;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.price_white-line-mob {
+		display: none;
+	}
+
+	.price_white-line-desk {
+		display: flex;
+		background: #fff;
+		width: 1px;
+		height: 215px;
+	}
+
+	/* STUDY ONLINE */
+
+	.study_block {
+		gap: 40px;
+	}
 }

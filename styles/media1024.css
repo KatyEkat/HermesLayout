@@ -314,4 +314,10 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+
+	/* STUDY ONLINE */
+
+	.study_block {
+		gap: 80px;
+	}
 }

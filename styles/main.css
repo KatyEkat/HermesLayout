@@ -802,9 +802,9 @@
 	list-style-type: none;
 }
 
-.price_miniblock-catA{
+.price_miniblock-catA {
 	color: #000;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -911,24 +911,24 @@
 }
 
 .about_main_bgr-img-mob-catA {
-    transform: translate(-20%);
-    height: 675px;
+	transform: translate(-20%);
+	height: 675px;
 }
 
 .about_main_bgr-img-mob-auto {
-    transform: translate(-20%);
-    height: 675px;
+	transform: translate(-20%);
+	height: 675px;
 }
 
-.about_main_bgr-img-desk-auto{
+.about_main_bgr-img-desk-auto {
 	display: none;
 }
 
-.about_main_bgr-img-desk-train{
+.about_main_bgr-img-desk-train {
 	display: none;
 }
 
-.about_main_bgr-img-desk-avia{
+.about_main_bgr-img-desk-avia {
 	display: none;
 }
 
@@ -941,7 +941,7 @@
 	height: 675px;
 }
 
-.about_main_bgr-img-mob-avia{
+.about_main_bgr-img-mob-avia {
 	height: 675px;
 }
 
@@ -965,7 +965,7 @@
 	right: -20px;
 }
 
-.about_main_img-down{
+.about_main_img-down {
 	position: absolute;
 	width: 96px;
 	top: 3px;
@@ -1151,4 +1151,69 @@
 
 .autopark_img {
 	width: clamp(270px, 60vw, 380px);
+}
+
+/* ONLINE STUDY */
+
+.online_study_list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.online_study_list-description {
+	margin-top: 15px;
+}
+
+.study_block {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+	margin-top: 30px;
+}
+
+.study_miniblock {
+	width: 240px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.study_miniblock-img {
+	width: 80px;
+}
+
+.study_miniblock-line {
+	background: #0091cd;
+	width: 72px;
+	height: 1px;
+}
+
+.study_miniblock-description {
+	color: #000;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.study_header{
+	max-width: 411px;
+}
+
+.study_section{
+	align-items: center;
 }
