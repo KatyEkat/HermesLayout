@@ -320,4 +320,20 @@
 	.study_block {
 		gap: 80px;
 	}
+
+	/* CONTACTS */
+
+	.contacts_map {
+		height: 513px;
+	}
+
+	.contacts_block {
+		margin-top: 74px;
+		margin-bottom: 50px;
+	}
+
+	.contacts_list {
+		margin-top: 50px;
+	}
+	
 }

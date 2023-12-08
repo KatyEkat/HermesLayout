@@ -1175,10 +1175,10 @@
 
 .study_block {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 80px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 80px;
 	margin-top: 30px;
 }
 
@@ -1210,10 +1210,84 @@
 	line-height: normal;
 }
 
-.study_header{
+.study_header {
 	max-width: 411px;
 }
 
-.study_section{
+.study_section {
 	align-items: center;
+}
+
+/* CONTACTS */
+
+.contacts_block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	gap: 30px;
+	width: clamp(270px, 95vw, 1170px);
+}
+
+.contacts_miniblock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 240px;
+	gap: 20px;
+}
+
+.contacts_miniblock-img {
+	width: 100px;
+}
+
+.contacts_miniblock-description {
+	color: #0091cd;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 13px;
+}
+
+.contacts_miniblock-line {
+	background: #0091cd;
+	width: 72px;
+	height: 1px;
+}
+
+.contacts_miniblock-contact {
+	color: #000;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.contacts_map {
+	width: clamp(270px, 100%, 1170px);
+	height: 540px;
+}
+
+.contacts_list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	list-style-type: disc;
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 20px;
+	padding-left: 25px;
+	margin-bottom: 30px;
 }
