@@ -1317,7 +1317,6 @@
 }
 
 .services_btn:hover {
-	/* border: 1px solid #0091cd; */
 	background: #fff;
 	color: #0091cd;
 }
@@ -1325,8 +1324,38 @@
 .services_btn:active {
 	border: 1px solid #0177aa;
 	background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
+	border: none;
 }
 
 .services_miniblock-content {
 	height: auto;
+}
+
+.popup{
+	background: #fff;
+	height: 170px;
+    display: flex;
+    align-items: center;
+	width: clamp(270px, 60vw, 380px);
+	position: absolute;
+    top: 40%;
+	display: none;
+}
+
+.service_block_popup{
+	position: relative;
+}
+
+.services_popup {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	border: 1px solid #0091cd;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.popup_content{
+	display: flex;
+	gap: 10px;
+	margin-left: 10px;
 }
