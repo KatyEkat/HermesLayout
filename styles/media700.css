@@ -1,10 +1,33 @@
 @media (min-width: 700px) {
-	/* ANSWERS */
+	/* SWIPER  */
+	.swiper-slide .swiper_img-girl_mob {
+		transform: translate(-50%, -50%);
+	}
 
+	.swiper_miniblock_img {
+		display: none;
+	}
+
+	.swiper-btn-application-mob {
+		left: 40%;
+	}
+
+	/* STEPS */
+	.steps_section {
+	}
+
+	/* ANSWERS */
 	.answers {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.answers_card {
+		width: 370px;
+	}
+
+	.answers_img {
+		width: 370px;
 	}
 
 	/* FOOTER */
@@ -12,5 +35,80 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	/* ABOUT PAGE */
+	.about_main_bgr-img-block-desk {
+		display: flex;
+		width: 100%;
+		transform: translate(-0%, -0%);
+	}
+
+	.about_main_bgr-img-desk {
+		transform: translate(0%, 0%);
+	}
+
+	.about_main_bgr-img-desk-catB {
+		transform: translate(-10%, 0%);
+	}
+
+	.about_main_bgr-img-desk-instructure {
+		transform: translate(-10%, 0%);
+	}
+	.about_main_bgr-img-desk-classes {
+		transform: translate(0%, 0%);
+	}
+
+	.about_main_bgr-img-desk-catCD {
+		transform: translate(-10%, 0%);
+	}
+	.about_main_bgr-img-desk-auto {
+		transform: translate(0%);
+	}
+
+	.about_main_bgr-img-desk-train {
+		transform: translate(-10%, 0%);
+	}
+
+	.about_main_bgr-img-desk-avia {
+		transform: translate(-10%, -0%);
+	}
+
+	.about_main_konus-down {
+		top: -56px;
+		right: -63px;
+	}
+
+	.about_main_img-down {
+		width: 215px;
+		top: 45px;
+		right: -18px;
+	}
+
+	/* PRICE */
+
+	.price_block-location {
+		display: flex;
+		margin: 0 50px;
+		gap: 24px;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.price_white-line-mob {
+		display: none;
+	}
+
+	.price_white-line-desk {
+		display: flex;
+		background: #fff;
+		width: 1px;
+		height: 215px;
+	}
+
+	/* STUDY ONLINE */
+
+	.study_block {
+		gap: 40px;
 	}
 }
