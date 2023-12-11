@@ -213,7 +213,7 @@
 
 	/* FOOTER */
 	.footer_content {
-		max-width: 865px;
+		max-width: 520px;
 	}
 
 	.footer_content {
@@ -334,6 +334,15 @@
 
 	.contacts_list {
 		margin-top: 50px;
+	}
+
+	/* SERVICES */
+
+	.services_miniblock-content {
+		height: 360px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 	
 }

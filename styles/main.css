@@ -1136,7 +1136,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	width: clamp(220px, 60vw, 351px);
+	width: clamp(220px, 56vw, 351px);
 }
 
 /* AUTOPARK */
@@ -1290,4 +1290,43 @@
 	margin-top: 20px;
 	padding-left: 25px;
 	margin-bottom: 30px;
+}
+
+/* services */
+
+.services_content {
+	margin-bottom: 20px;
+}
+
+.services_btn {
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+	width: 149px;
+	padding: 6px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #0091cd;
+	margin-bottom: 30px;
+	border: none;
+}
+
+.services_btn:hover {
+	/* border: 1px solid #0091cd; */
+	background: #fff;
+	color: #0091cd;
+}
+
+.services_btn:active {
+	border: 1px solid #0177aa;
+	background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
+}
+
+.services_miniblock-content {
+	height: auto;
 }

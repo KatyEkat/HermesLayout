@@ -866,12 +866,6 @@
 
 		<footer class="footer center">
 			<div class="footer_content">
-				<div class="footer_miniblock_services">
-					<h3 class="footer_heading">Наши услуги</h3>
-					<a class="footer_links" href="#">Автошкола</a>
-					<a class="footer_links" href="./pages/categoryA.html">Мотошкола</a>
-					<a class="footer_links" href="№">Транспортная логистика</a>
-				</div>
 				<div class="footer_miniblock">
 					<h3 class="footer_heading">Навигация</h3>
 					<a class="footer_links" href="#">Наши услуги</a>
@@ -945,6 +939,8 @@
 				}
 			});
 
+			// дэсктоп открывание закрывание меню
+
 			document.addEventListener('DOMContentLoaded', function () {
 				const submenusDesktop = document.querySelectorAll('.header_desktop-links .header_desk_sublinks');
 				const arrowIconsDesktop = document.querySelectorAll('.header_desktop-links .header_desctop-arrow-link img');
@@ -952,36 +948,30 @@
 				document.addEventListener('click', function (event) {
 					const clickedElementDesktop = event.target;
 
-					// Проверяем, является ли кликнутый элемент чекбоксом подменю
 					const isSubmenuCheckbox = clickedElementDesktop.classList.contains('submenu-checkbox');
 
 					if (isSubmenuCheckbox || clickedElementDesktop.closest('.submenu-checkbox')) {
 						const checkbox = isSubmenuCheckbox ? clickedElementDesktop : clickedElementDesktop.closest('.submenu-checkbox');
 
-						// Переключаем видимость текущего подменю
 						const currentSubmenuDesktop = checkbox.closest('.header_desktop-links').querySelector('.header_mob_sublinks');
 						toggleSubmenuVisibility(currentSubmenuDesktop, checkbox.checked);
 
-						// Обновляем статус стрелочки
 						const currentArrowIconDesktop = checkbox.closest('.header_desktop-links').querySelector('img');
 						updateArrowIcon(currentArrowIconDesktop, checkbox.checked);
 
-						// Закрываем остальные подменю
 						submenusDesktop.forEach(submenuDesktop => {
 							if (submenuDesktop !== currentSubmenuDesktop && checkbox.checked) {
 								submenuDesktop.style.display = 'none';
 
-								// Обновляем статус стрелочек в закрытых подменю
 								const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
 								updateArrowIcon(closedArrowIconDesktop, false);
 							}
 						});
 					} else {
-						// Закрываем все подменю, если кликнуто вне чекбоксов подменю
+
 						submenusDesktop.forEach(submenuDesktop => {
 							submenuDesktop.style.display = 'none';
 
-							// Обновляем статус стрелочек в закрытых подменю
 							const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
 							updateArrowIcon(closedArrowIconDesktop, false);
 						});
