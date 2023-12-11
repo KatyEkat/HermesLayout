@@ -103,6 +103,7 @@
 	top: 100%;
 	left: 0;
 	z-index: 1000;
+	width: 100%;
 }
 .header_mob-link {
 	color: #000;
@@ -114,11 +115,11 @@
 	background: #fff;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
 	display: flex;
-	width: 100%px;
 	padding: 41px 25px;
 	align-items: center;
 	gap: 10px;
 	position: relative;
+	text-decoration: none;
 }
 
 .header_mob-link:hover {
@@ -129,7 +130,7 @@
 	list-style: none;
 	background: #ebebec;
 	width: 341px;
-	height: 434px;
+	/* height: 434px; */
 	padding: 0 35px;
 	display: none;
 	flex-direction: column;
@@ -181,8 +182,20 @@
 	margin-bottom: 24px;
 }
 
+.header_mob_link-heading-name {
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 8px;
+}
+
 .header_mob_link {
 	margin-bottom: 10px;
+	display: flex;
+	gap: 10px;
 }
 
 .header_mob_link-a {
@@ -193,21 +206,40 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	text-decoration: none;
+}
+
+.header-link-a {
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.header-link-a:hover {
+	color: #0091cd;
 }
 
 .header_mob_sublinks {
 	position: relative;
 	list-style: none;
 	background: #ebebec;
-	width: clamp(278px, 53vw, 679px);
-	height: 434px;
-	padding: 0 35px;
+	width: clamp(170px, 53vw, 679px);
+	/* padding: 0 35px; */
 	display: none;
 	flex-direction: column;
 	align-items: flex-start;
 	position: absolute;
 	top: 0;
 	left: 100%;
+}
+
+.submenu-mob-services {
+	width: 50%;
+	
 }
 
 .submenu-checkbox {
@@ -218,18 +250,39 @@
 	display: none;
 }
 
+/* .header_mob-link-arrow{
+	width: 10px;
+} */
+
 .submenu-checkbox:checked ~ .header_mob_sublinks {
 	display: flex;
 	left: 0;
-	top: 101px;
+	top: 80px;
 	z-index: 10;
-	padding-top: 35px;
+	/* padding-top: 35px; */
 	position: absolute;
+	left: 10%;
+
+	display: flex;
+	height: 430px;
+	justify-content: center;
+}
+
+.header_mob-submenu-about-us {
+	display: flex;
+	gap: 30px;
 }
 
 .gray_triangle {
 	position: absolute;
 	fill: #ebebec;
+}
+
+.gray_line {
+	background: #c4c4c6;
+	width: 187px;
+	height: 1px;
+	margin-bottom: 16px;
 }
 
 .header_desk_link-heading {
@@ -586,6 +639,7 @@
 	font-weight: 400;
 	line-height: normal;
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 /* FORM SECTION */
@@ -1331,18 +1385,18 @@
 	height: auto;
 }
 
-.popup{
+.popup {
 	background: #fff;
 	height: 170px;
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	width: clamp(270px, 60vw, 380px);
 	position: absolute;
-    top: 40%;
+	top: 40%;
 	display: none;
 }
 
-.service_block_popup{
+.service_block_popup {
 	position: relative;
 }
 
@@ -1354,7 +1408,7 @@
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.popup_content{
+.popup_content {
 	display: flex;
 	gap: 10px;
 	margin-left: 10px;
