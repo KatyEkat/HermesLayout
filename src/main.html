@@ -245,7 +245,7 @@
 						Наши услуги
 						<img src="../img/arrowDown.svg" alt="arrow" />
 
-						<ul class="header_mob_sublinks header_desk-submenu">
+						<ul class="header_desk_sublinks header_desk-submenu">
 							<img
 								class="gray_triangle"
 								src="../img/main/grayTriangle.png"
@@ -253,7 +253,7 @@
 							/>
 
 							<p class="header_desk_link-heading">Автошкола</p>
-							<li class="header_mob_link">
+							<li class="header_desk_link">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="8"
@@ -896,6 +896,8 @@
 			<p class="footer_c">© 2023 Hermes</p>
 		</footer>
 
+		<script src="../scripts/main.js"></script>
+
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 		<script>
@@ -907,90 +909,91 @@
 			});
 
 
-			// бургер мобилка
-			document.addEventListener('DOMContentLoaded', function () {
-				const submenus = document.querySelectorAll('.header_mob-submenu');
-				const arrowIcons = document.querySelectorAll('.header_desctop-arrow-link img');
+// 			// бургер мобилка
+// 			document.addEventListener('DOMContentLoaded', function () {
+// 				const submenus = document.querySelectorAll('.header_mob-submenu');
+// 				const arrowIcons = document.querySelectorAll('.header_desctop-arrow-link img');
 
-				document.addEventListener('click', function (event) {
-					const clickedElement = event.target;
-					if (clickedElement.classList.contains('submenu-checkbox')) {
-						const currentSubmenu = clickedElement.closest('.header_desctop-arrow-link').querySelector('.header_mob-submenu');
-						toggleSubmenuVisibility(currentSubmenu, clickedElement.checked);
-						const currentArrowIcon = clickedElement.closest('.header_desctop-arrow-link').querySelector('img');
-						updateArrowIcon(currentArrowIcon, clickedElement.checked);
-						submenus.forEach(submenu => {
-							if (submenu !== currentSubmenu && clickedElement.checked) {
-								submenu.style.display = 'none';
-								const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
-								updateArrowIcon(closedArrowIcon, false);
-							}
-						});
-					} else {
-						submenus.forEach(submenu => {
-							submenu.style.display = 'none';
-							const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
-							updateArrowIcon(closedArrowIcon, false);
-						});
-					}
-				});
+// 				document.addEventListener('click', function (event) {
+// 					const clickedElement = event.target;
+// 					if (clickedElement.classList.contains('submenu-checkbox')) {
+// 						const currentSubmenu = clickedElement.closest('.header_desctop-arrow-link').querySelector('.header_mob-submenu');
+// 						toggleSubmenuVisibility(currentSubmenu, clickedElement.checked);
+// 						const currentArrowIcon = clickedElement.closest('.header_desctop-arrow-link').querySelector('img');
+// 						updateArrowIcon(currentArrowIcon, clickedElement.checked);
+// 						submenus.forEach(submenu => {
+// 							if (submenu !== currentSubmenu && clickedElement.checked) {
+// 								submenu.style.display = 'none';
+// 								const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
+// 								updateArrowIcon(closedArrowIcon, false);
+// 							}
+// 						});
+// 					} else {
+// 						submenus.forEach(submenu => {
+// 							submenu.style.display = 'none';
+// 							const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
+// 							updateArrowIcon(closedArrowIcon, false);
+// 						});
+// 					}
+// 				});
 
-				function toggleSubmenuVisibility(submenu, isVisible) {
-					submenu.style.display = isVisible ? 'flex' : 'none';
-				}
+// 				function toggleSubmenuVisibility(submenu, isVisible) {
+// 					submenu.style.display = isVisible ? 'flex' : 'none';
+// 				}
 
-				function updateArrowIcon(arrowIcon, isOpen) {
-					arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
-				}
-			});
+// 				function updateArrowIcon(arrowIcon, isOpen) {
+// 					arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
+// 				}
+// 			});
 
-			// дэсктоп открывание закрывание меню
+// 			// дэсктоп открывание закрывание меню
 
-			document.addEventListener('DOMContentLoaded', function () {
-				const submenusDesktop = document.querySelectorAll('.header_desktop-links .header_desk_sublinks');
-				const arrowIconsDesktop = document.querySelectorAll('.header_desktop-links .header_desctop-arrow-link img');
+// 			document.addEventListener('DOMContentLoaded', function () {
+// 	const submenusDesktop = document.querySelectorAll('.header_desktop-links .header_mob_sublinks');
+// 	const arrowIconsDesktop = document.querySelectorAll('.header_desktop-links .header_desctop-arrow-link img');
 
-				document.addEventListener('click', function (event) {
-					const clickedElementDesktop = event.target;
+// 	document.addEventListener('click', function (event) {
+// 		const clickedElementDesktop = event.target;
+// 		const isSubmenuCheckbox = clickedElementDesktop.classList.contains('submenu-checkbox');
 
-					const isSubmenuCheckbox = clickedElementDesktop.classList.contains('submenu-checkbox');
+// 		if (isSubmenuCheckbox || clickedElementDesktop.closest('.submenu-checkbox')) {
+// 			const checkbox = isSubmenuCheckbox ? clickedElementDesktop : clickedElementDesktop.closest('.submenu-checkbox');
+// 			const currentSubmenuDesktop = checkbox.closest('.header_desktop-links').querySelector('.header_mob_sublinks');
+// 			toggleSubmenuVisibility(currentSubmenuDesktop, checkbox.checked);
 
-					if (isSubmenuCheckbox || clickedElementDesktop.closest('.submenu-checkbox')) {
-						const checkbox = isSubmenuCheckbox ? clickedElementDesktop : clickedElementDesktop.closest('.submenu-checkbox');
+// 			const currentArrowIconDesktop = checkbox.closest('.header_desktop-links').querySelector('img');
+// 			updateArrowIcon(currentArrowIconDesktop, checkbox.checked);
 
-						const currentSubmenuDesktop = checkbox.closest('.header_desktop-links').querySelector('.header_mob_sublinks');
-						toggleSubmenuVisibility(currentSubmenuDesktop, checkbox.checked);
+// 			submenusDesktop.forEach(submenuDesktop => {
+// 				if (submenuDesktop !== currentSubmenuDesktop && checkbox.checked) {
+// 					submenuDesktop.style.display = 'none';
 
-						const currentArrowIconDesktop = checkbox.closest('.header_desktop-links').querySelector('img');
-						updateArrowIcon(currentArrowIconDesktop, checkbox.checked);
+// 					// Обновляем статус стрелочек в закрытых подменю
+// 					const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
+// 					updateArrowIcon(closedArrowIconDesktop, false);
+// 				}
+// 			});
+// 		} else {
+// 			// Закрываем все подменю, если кликнуто вне чекбоксов подменю
+// 			submenusDesktop.forEach(submenuDesktop => {
+// 				submenuDesktop.style.display = 'none';
 
-						submenusDesktop.forEach(submenuDesktop => {
-							if (submenuDesktop !== currentSubmenuDesktop && checkbox.checked) {
-								submenuDesktop.style.display = 'none';
+// 				// Обновляем статус стрелочек в закрытых подменю
+// 				const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
+// 				updateArrowIcon(closedArrowIconDesktop, false);
+// 			});
+// 		}
+// 	});
 
-								const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
-								updateArrowIcon(closedArrowIconDesktop, false);
-							}
-						});
-					} else {
+// 	function toggleSubmenuVisibility(submenuDesktop, isVisible) {
+// 		submenuDesktop.style.display = isVisible ? 'flex' : 'none';
+// 	}
 
-						submenusDesktop.forEach(submenuDesktop => {
-							submenuDesktop.style.display = 'none';
+// 	function updateArrowIcon(arrowIconDesktop, isOpen) {
+// 		arrowIconDesktop.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
+// 	}
+// });
 
-							const closedArrowIconDesktop = submenuDesktop.closest('.header_desktop-links').querySelector('img');
-							updateArrowIcon(closedArrowIconDesktop, false);
-						});
-					}
-				});
-
-				function toggleSubmenuVisibility(submenuDesktop, isVisible) {
-					submenuDesktop.style.display = isVisible ? 'flex' : 'none';
-				}
-
-				function updateArrowIcon(arrowIconDesktop, isOpen) {
-					arrowIconDesktop.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
-				}
-			});
 
 		</script>
 	</body>
