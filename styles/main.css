@@ -239,7 +239,6 @@
 
 .submenu-mob-services {
 	width: 50%;
-	
 }
 
 .submenu-checkbox {
@@ -1368,6 +1367,7 @@
 	background: #0091cd;
 	margin-bottom: 30px;
 	border: none;
+	text-decoration: none;
 }
 
 .services_btn:hover {
@@ -1378,6 +1378,7 @@
 .services_btn:active {
 	border: 1px solid #0177aa;
 	background: linear-gradient(180deg, #a6d1e4 0%, #0190ce 98.96%);
+	color: white;
 	border: none;
 }
 
@@ -1412,4 +1413,19 @@
 	display: flex;
 	gap: 10px;
 	margin-left: 10px;
+}
+
+.about_auto_school_miniblock-header {
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.about_autoschool-miniblock {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
 }
