@@ -134,13 +134,22 @@
 	.about_main_konus-down {
 		position: absolute;
 		transform: rotate(325deg);
-		top: -55px;
+		top: -83px;
 		right: -20px;
 		width: 167px;
 	}
 
 	.about_main_img-down {
 		top: 45px;
+		right: -18px;
+	}
+
+	.about_main_img-car{
+		top: -46px;
+	}
+
+	.about_main_img-train {
+		top: -26px;
 		right: -18px;
 	}
 

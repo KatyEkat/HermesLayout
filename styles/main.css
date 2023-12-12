@@ -789,7 +789,6 @@
 }
 
 .price_block-height {
-	height: 410px;
 	width: clamp(270px, 80vw, 368px);
 }
 
@@ -895,7 +894,7 @@
 
 	border: 1px solid #0091cd;
 	background: #fff;
-
+	cursor: pointer;
 	display: flex;
 	width: clamp(270px, 60vw, 460px);
 	padding: 6px 20px;
@@ -1014,7 +1013,7 @@
 	position: absolute;
 	width: 96px;
 	transform: rotate(325deg);
-	top: 3px;
+	top: -9px;
 	right: -20px;
 }
 
@@ -1327,6 +1326,9 @@
 .contacts_map {
 	width: clamp(270px, 100%, 1170px);
 	height: 540px;
+	border: 0;
+	loading: 'lazy'
+
 }
 
 .contacts_list {
@@ -1368,6 +1370,7 @@
 	margin-bottom: 30px;
 	border: none;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .services_btn:hover {
@@ -1431,8 +1434,7 @@
 	height: auto;
 }
 
-
-.about_autoschool-block{
+.about_autoschool-block {
 	background: #f1f1f1;
 	width: clamp(170px, 50vw, 280px);
 }
@@ -1441,7 +1443,6 @@
 	width: clamp(170px, 50vw, 280px);
 	margin-bottom: 20px;
 }
-
 
 .about_minipage_btn {
 	color: #fff;
@@ -1460,4 +1461,21 @@
 	margin-bottom: 30px;
 	border: none;
 	text-decoration: none;
+}
+
+.about_minipage_btn:hover {
+	color: #0091cd;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	background: #fff;
+}
+
+.about_minipage_btn:active {
+	color: #fff;
+	line-height: normal;
+	background: linear-gradient(180deg, #bbebff 0%, #00b4ff 98.96%);
+	
 }
