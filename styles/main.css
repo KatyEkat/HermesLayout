@@ -1428,4 +1428,36 @@
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
+	height: auto;
+}
+
+
+.about_autoschool-block{
+	background: #f1f1f1;
+	width: clamp(170px, 50vw, 280px);
+}
+
+.aboutautosckhool_miniblock-img {
+	width: clamp(170px, 50vw, 280px);
+	margin-bottom: 20px;
+}
+
+
+.about_minipage_btn {
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+	width: clamp(100px, 18vw, 170px);
+	padding: 6px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #0091cd;
+	margin-bottom: 30px;
+	border: none;
+	text-decoration: none;
 }
