@@ -140,22 +140,41 @@
 }
 
 .header_desk-submenu {
-    list-style: none;
-    background: #ebebec;
-    width: 200px;
-    padding: 10px;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1001;
+	list-style: none;
+	background: #ebebec;
+	width: 200px;
+	padding: 10px;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1001;
 }
 
-.gray_triangle {
+.header_sublinks-about-us {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.gray_triangle-services-desk {
 	position: absolute;
-	fill: #ebebec;
+	width: 23px!important;
+	top: -12px;
+    z-index: 88888;
+    /* left: 355px; */
+}
+
+.gray_triangle-aboutus-desk{
+	position: absolute;
+	width: 23px!important;
+	top: -12px;
+    z-index: 88888;
+    /* left: 479px; */
 }
 
 .header_mob-link:hover + .header_mob-submenu {
@@ -170,19 +189,9 @@
 	display: flex;
 }
 
-.header_desk-submenu.active {
-    display: flex;
-}
-
-
 .header_desk-submenu {
-    display: none;
+	display: none;
 }
-
-.header_desk-submenu.active {
-    display: block;
-}
-
 
 .header_desctop-arrow-link img {
 	width: 15px;
@@ -199,14 +208,14 @@
 }
 
 .header_desk-link-heading {
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 5px;
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 .header_mob_link-heading {
@@ -294,7 +303,7 @@
 }
 
 .submenu-checkbox:checked ~ .header_desk-submenu {
-    display: flex;
+	display: flex;
 }
 
 .submenu-checkbox:checked ~ .header_mob_sublinks {
@@ -329,7 +338,7 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
-	margin-top: 40px;
+	margin-top: 35px;
 	text-decoration-line: underline;
 	text-decoration-color: #c4c4c6;
 	text-underline-offset: 8px;
@@ -350,22 +359,30 @@
 	line-height: normal;
 }
 .header_desktop-links {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .header_desktop-link {
-    position: relative;
-    margin-right: 20px;
+	margin-right: 20px;
+}
+
+.desk_header-about-us-sublinks-block {
+	display: flex;
+	justify-content: start;
+	gap: 60px;
 }
 
 .header_desk-submenu.active {
-    display: flex;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	align-items: center;
 }
 
-
 .submenu-visible {
-    display: flex !important;
+	display: flex !important;
 }
 
 .header_desk_sublinks {
@@ -377,25 +394,38 @@
 	flex-direction: column;
 	align-items: flex-start;
 	position: absolute;
-	top: 35px;
-
+	top: 100px;
 }
 
-.desk-header-about-us{
+.desk-header-about-us {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	margin-bottom: 40px;
 }
 
 .header_mob-submenu-about-us {
 	display: flex;
 	gap: 30px;
-	height: 313px!important;
+	height: 313px !important;
 }
 
-.header_desk-submenu-links{
+.header_desk-submenu-links {
 	flex-direction: row;
-	width: clamp(915px, 97vw, 1216px);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	justify-content: center;
+}
+
+.header_desk-submenu-links-about-us {
+	flex-direction: row;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	justify-content: center;
 }
 
 /* MAIN PAGE */
@@ -482,7 +512,7 @@
 	text-align: start;
 }
 
-.header_desk-submenu-aboutus{
+.header_desk-submenu-aboutus {
 	gap: 7px;
 }
 
@@ -1398,8 +1428,7 @@
 	width: clamp(270px, 100%, 1170px);
 	height: 540px;
 	border: 0;
-	loading: 'lazy'
-
+	loading: "lazy";
 }
 
 .contacts_list {
@@ -1470,9 +1499,25 @@
 	top: 40%;
 	display: none;
 }
+/* 
+.popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+} */
+
+.popup.active {
+    display: block; /* Покажется только при наличии класса "active" */
+}
+
 
 .service_block_popup {
 	position: relative;
+	z-index: 99999;
 }
 
 .services_popup {
@@ -1548,5 +1593,4 @@
 	color: #fff;
 	line-height: normal;
 	background: linear-gradient(180deg, #bbebff 0%, #00b4ff 98.96%);
-	
 }
