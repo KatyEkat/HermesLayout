@@ -53,14 +53,21 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (event) {
         const clickedElement = event.target;
 
-        const clickedArrow = clickedElement.closest('.header_desctop-arrow-link');
-        if (clickedArrow) {
-            const currentSubmenu = clickedArrow.querySelector('.header_desk-submenu');
-            const currentArrowIcon = clickedArrow.querySelector('img');
+        const isServicesButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
+        const isAboutButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
+
+        if (isServicesButton || isAboutButton) {
+            const currentSubmenu = isServicesButton
+                ? isServicesButton.querySelector('.header_desk-submenu')
+                : isAboutButton.querySelector('.header_desk-submenu');
+
+            const currentArrowIcon = isServicesButton
+                ? isServicesButton.querySelector('img')
+                : isAboutButton.querySelector('img');
+
             toggleSubmenuVisibility(currentSubmenu, currentArrowIcon);
         } else {
             submenusDesktop.forEach(submenu => {
-                submenu.style.display = 'none';
                 const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
                 updateArrowIcon(closedArrowIcon, false);
             });
@@ -68,21 +75,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function toggleSubmenuVisibility(submenu, arrowIcon) {
-        const isVisible = submenu.style.display === 'flex';
-        submenu.style.display = isVisible ? 'none' : 'flex';
-
-        updateArrowIcon(arrowIcon, !isVisible);
+        const isActive = submenu.classList.contains('active');
 
         submenusDesktop.forEach(otherSubmenu => {
-            if (otherSubmenu !== submenu && isVisible) {
-                otherSubmenu.style.display = 'none';
+            if (otherSubmenu !== submenu && otherSubmenu.classList.contains('active')) {
+                otherSubmenu.classList.remove('active');
                 const closedArrowIcon = otherSubmenu.closest('.header_desctop-arrow-link').querySelector('img');
                 updateArrowIcon(closedArrowIcon, false);
             }
         });
+
+        submenu.classList.toggle('active');
+        updateArrowIcon(arrowIcon, !isActive);
     }
 
     function updateArrowIcon(arrowIcon, isOpen) {
         arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
     }
 });
+

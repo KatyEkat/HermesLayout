@@ -16,7 +16,6 @@
 }
 
 .header-block {
-	/* display: flex; */
 	justify-content: space-between;
 	padding: 3vw;
 	display: none;
@@ -298,16 +297,11 @@
     display: flex;
 }
 
-/* .header_mob-link-arrow{
-	width: 10px;
-} */
-
 .submenu-checkbox:checked ~ .header_mob_sublinks {
 	display: flex;
 	left: 0;
 	top: 80px;
 	z-index: 10;
-	/* padding-top: 35px; */
 	position: absolute;
 	left: 10%;
 
@@ -339,6 +333,7 @@
 	text-decoration-line: underline;
 	text-decoration-color: #c4c4c6;
 	text-underline-offset: 8px;
+	margin-bottom: 16px;
 }
 
 .header_desk_link {
@@ -364,9 +359,10 @@
     margin-right: 20px;
 }
 
-.header_desktop-link:hover .header_desk-submenu {
+.header_desk-submenu.active {
     display: flex;
 }
+
 
 .submenu-visible {
     display: flex !important;
@@ -382,7 +378,12 @@
 	align-items: flex-start;
 	position: absolute;
 	top: 35px;
-	/* left: 100%; */
+
+}
+
+.desk-header-about-us{
+	display: flex;
+	flex-direction: column;
 	gap: 8px;
 }
 
@@ -390,6 +391,11 @@
 	display: flex;
 	gap: 30px;
 	height: 313px!important;
+}
+
+.header_desk-submenu-links{
+	flex-direction: row;
+	width: clamp(915px, 97vw, 1216px);
 }
 
 /* MAIN PAGE */
@@ -474,6 +480,10 @@
 	position: relative;
 	flex-direction: column;
 	text-align: start;
+}
+
+.header_desk-submenu-aboutus{
+	gap: 7px;
 }
 
 .swiper_miniblock_header {
@@ -1111,10 +1121,6 @@
 
 .about_block {
 	margin-bottom: 30px;
-}
-
-.about_miniblock {
-	/* margin-top: 30px; */
 }
 
 .descr_block {
