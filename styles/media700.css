@@ -75,14 +75,21 @@
 	}
 
 	.about_main_konus-down {
-		top: -56px;
 		right: -63px;
 	}
 
 	.about_main_img-down {
 		width: 215px;
-		top: 45px;
+		top: 14px;
 		right: -18px;
+	}
+
+	.about_main_img-car{
+		top: -150px;
+	}
+
+	.about_main_img-train{
+		top: -93px;
 	}
 
 	/* PRICE */
