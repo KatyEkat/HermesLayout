@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	outline: 1px solid lightgreen;
 }
 
 /* HEADER */
@@ -52,6 +51,7 @@
 
 #burger__checkbox:checked + .burger__label + .header_mob-links {
 	display: block;
+	z-index: 999999999;
 }
 
 .header__nav_mobile {
@@ -163,18 +163,18 @@
 
 .gray_triangle-services-desk {
 	position: absolute;
-	width: 23px!important;
+	width: 23px !important;
 	top: -12px;
-    z-index: 88888;
-    /* left: 355px; */
+	z-index: 88888;
+	/* left: 355px; */
 }
 
-.gray_triangle-aboutus-desk{
+.gray_triangle-aboutus-desk {
 	position: absolute;
-	width: 23px!important;
+	width: 23px !important;
 	top: -12px;
-    z-index: 88888;
-    /* left: 479px; */
+	z-index: 88888;
+	/* left: 479px; */
 }
 
 .header_mob-link:hover + .header_mob-submenu {
@@ -379,6 +379,7 @@
 	margin: 0;
 	padding: 0;
 	align-items: center;
+	z-index: 9999999;
 }
 
 .submenu-visible {
@@ -895,6 +896,10 @@
 
 .price_block-height {
 	width: clamp(270px, 80vw, 368px);
+}
+
+.height {
+	height: 367px;
 }
 
 .price-block-big {
@@ -1490,7 +1495,7 @@
 }
 
 .popup {
-	background: var(--50, rgba(0, 0, 0, 0.50));
+	background: var(--50, rgba(0, 0, 0, 0.5));
 	/* height: 170px; */
 	height: 100%;
 	display: flex;
@@ -1501,7 +1506,7 @@
 	display: none;
 }
 
-.popup_bgr{
+.popup_bgr {
 	background: #fff;
 	height: 170px;
 	display: flex;
@@ -1513,9 +1518,8 @@
 }
 
 .popup.active {
-    display: block;
+	display: block;
 }
-
 
 .service_block_popup {
 	position: relative;
