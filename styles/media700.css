@@ -118,4 +118,12 @@
 	.study_block {
 		gap: 40px;
 	}
+
+	.form {
+		padding-top: 20px;
+		height: 305px;
+		width: clamp(235px, 90%, 865px);
+		margin-top: 30px;
+		height: 470px;
+	}
 }
