@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// }
 
 
-    document.addEventListener('mouseover', function (event) {
+    document.addEventListener('mouseout', function (event) {
         const hoveredElement = event.target;
 
         const isServicesButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
@@ -74,12 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 : isAboutButton.querySelector('img');
 
             toggleSubmenuVisibility(currentSubmenu, currentArrowIcon);
-        } else {
-            submenusDesktop.forEach(submenu => {
-                const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
-                updateArrowIcon(closedArrowIcon, false);
-            });
-        }
+        } 
+		// else {
+        //     submenusDesktop.forEach(submenu => {
+        //         const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
+        //         updateArrowIcon(closedArrowIcon, false);
+        //     });
+        // }
     });
 
     function toggleSubmenuVisibility(submenu, arrowIcon) {
@@ -101,4 +102,3 @@ document.addEventListener('DOMContentLoaded', function () {
         arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
     }
 });
-
