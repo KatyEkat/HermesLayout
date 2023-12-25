@@ -259,6 +259,10 @@
 	text-decoration: none;
 }
 
+.header_desk_link-a:hover{
+	color: #0091CD;
+}
+
 .header-link-a {
 	color: #000;
 	font-family: "Montserrat";
@@ -346,6 +350,9 @@
 }
 
 .header_desk_link {
+	display: flex;
+    gap: 10px;
+    align-items: center;
 	margin-bottom: 10px;
 }
 
@@ -468,6 +475,7 @@
 	top: 420px;
 	z-index: 4;
 	left: 20%;
+	text-decoration: none;
 }
 
 .swiper-btn-application-mob:hover {
@@ -899,7 +907,7 @@
 }
 
 .height {
-	height: 367px;
+	height: 400px;
 }
 
 .price-block-big {
@@ -1013,6 +1021,7 @@
 	gap: 10px;
 	margin: 30px 20px;
 	height: 32px;
+	text-decoration: none;
 }
 
 .price-button:hover {
@@ -1370,6 +1379,7 @@
 
 .study_header {
 	max-width: 411px;
+	text-align: center;
 }
 
 .study_section {
@@ -1476,11 +1486,13 @@
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	border: 1px solid  #0091CD;
 }
 
 .services_btn:hover {
 	background: #fff;
 	color: #0091cd;
+	border: 1px solid  #0091CD;
 }
 
 .services_btn:active {
