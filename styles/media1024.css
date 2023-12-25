@@ -94,6 +94,11 @@
 		transform: rotate(120deg);
 	}
 
+	.header_desktop_link-with-arrow{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
 	/* SWIPER */
 	.swiper-block {
 		position: relative;

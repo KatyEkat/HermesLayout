@@ -47,58 +47,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // дэсктоп открывание закрывание меню
 
-document.addEventListener('DOMContentLoaded', function () {
-    const submenusDesktop = document.querySelectorAll('.header_desk-submenu');
-	// const menuListDesctop = document.querySelectorAll('.header_desktop-main-list');
+const submenu = [
+	[
+		document.querySelector(".header_about-us-services"),
+		document.querySelector(".header_desk-about-us-services-popup"),
+	],
+	[
+		document.querySelector(".header-link-about-us"),
+		document.querySelector(".header_desk-about-us-popup"),
+	],
+	[document.querySelector(".header-link-online"), null],
+	[document.querySelector(".header-link-news"), null],
+	[document.querySelector(".header-link-contacts"), null],
+];
 
-	// function closeAllSubmenus(){
-	// 	menuListDesctop.forEach((submenusDesktop) => {
-	// 		submenusDesktop.style.display = "none"
-	// 	})
-	// }
+console.log(submenu[0][1].classList.toString());
+let sublink = submenu[0][1];
+let sublinkHover = false;
+console.dir(sublink.classList);
 
+submenu.forEach((sub) => {
+	console.log(sub);
+	sub[0].addEventListener("mouseover", (event) => {
+		if (sublink.classList.toString() !== sub[1]?.classList.toString()) {
+			console.log(sublink);
+			sublink.classList.remove("active");
+		}
+		sub[1].classList.add("active");
+		sublinkHover = true;
+		if (sub[1]) sublink = sub[1];
+	});
+	sub[1]?.addEventListener("mouseout", (event) => {
+		event.stopPropagation();
 
-    document.addEventListener('mouseout', function (event) {
-        const hoveredElement = event.target;
-
-        const isServicesButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
-        const isAboutButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
-
-        if (isServicesButton || isAboutButton) {
-            const currentSubmenu = isServicesButton
-                ? isServicesButton.querySelector('.header_desk-submenu')
-                : isAboutButton.querySelector('.header_desk-submenu');
-
-            const currentArrowIcon = isServicesButton
-                ? isServicesButton.querySelector('img')
-                : isAboutButton.querySelector('img');
-
-            toggleSubmenuVisibility(currentSubmenu, currentArrowIcon);
-        } 
-		// else {
-        //     submenusDesktop.forEach(submenu => {
-        //         const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
-        //         updateArrowIcon(closedArrowIcon, false);
-        //     });
-        // }
-    });
-
-    function toggleSubmenuVisibility(submenu, arrowIcon) {
-        const isActive = submenu.classList.contains('active');
-
-        submenusDesktop.forEach(otherSubmenu => {
-            if (otherSubmenu !== submenu && otherSubmenu.classList.contains('active')) {
-                otherSubmenu.classList.remove('active');
-                const closedArrowIcon = otherSubmenu.closest('.header_desctop-arrow-link').querySelector('img');
-                updateArrowIcon(closedArrowIcon, false);
-            }
-        });
-
-        submenu.classList.toggle('active');
-        updateArrowIcon(arrowIcon, !isActive);
-    }
-
-    function updateArrowIcon(arrowIcon, isOpen) {
-        arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
-    }
+		sublinkHover = false;
+	});
+});
+document.addEventListener("mouseover", (event) => {
+	console.log(sublinkHover);
+	if (!sublinkHover) sublink.classList.remove("active");
 });
