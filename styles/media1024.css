@@ -67,6 +67,7 @@
 		align-items: center;
 		justify-content: space-around;
 		cursor: pointer;
+		text-decoration: none;
 	}
 
 	.btn:hover {
@@ -132,7 +133,7 @@
 	.swiper_miniblock_text-content {
 		margin-left: 60px;
 		margin-right: 77px;
-		top: -353px;
+		top: -380px;
 		position: relative;
 	}
 

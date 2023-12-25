@@ -259,6 +259,10 @@
 	text-decoration: none;
 }
 
+.header_desk_link-a:hover{
+	color: #0091CD;
+}
+
 .header-link-a {
 	color: #000;
 	font-family: "Montserrat";
@@ -468,6 +472,7 @@
 	top: 420px;
 	z-index: 4;
 	left: 20%;
+	text-decoration: none;
 }
 
 .swiper-btn-application-mob:hover {
@@ -1169,6 +1174,7 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	text-align: center;
 }
 
 .about_underline-blue {
@@ -1476,11 +1482,13 @@
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
+	border: 1px solid  #0091CD;
 }
 
 .services_btn:hover {
 	background: #fff;
 	color: #0091cd;
+	border: 1px solid  #0091CD;
 }
 
 .services_btn:active {
