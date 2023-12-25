@@ -49,12 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const submenusDesktop = document.querySelectorAll('.header_desk-submenu');
+	// const menuListDesctop = document.querySelectorAll('.header_desktop-main-list');
 
-    document.addEventListener('click', function (event) {
-        const clickedElement = event.target;
+	// function closeAllSubmenus(){
+	// 	menuListDesctop.forEach((submenusDesktop) => {
+	// 		submenusDesktop.style.display = "none"
+	// 	})
+	// }
 
-        const isServicesButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
-        const isAboutButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
+
+    document.addEventListener('mouseout', function (event) {
+        const hoveredElement = event.target;
+
+        const isServicesButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
+        const isAboutButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
 
         if (isServicesButton || isAboutButton) {
             const currentSubmenu = isServicesButton
@@ -66,12 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 : isAboutButton.querySelector('img');
 
             toggleSubmenuVisibility(currentSubmenu, currentArrowIcon);
-        } else {
-            submenusDesktop.forEach(submenu => {
-                const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
-                updateArrowIcon(closedArrowIcon, false);
-            });
-        }
+        } 
+		// else {
+        //     submenusDesktop.forEach(submenu => {
+        //         const closedArrowIcon = submenu.closest('.header_desctop-arrow-link').querySelector('img');
+        //         updateArrowIcon(closedArrowIcon, false);
+        //     });
+        // }
     });
 
     function toggleSubmenuVisibility(submenu, arrowIcon) {
@@ -93,4 +102,3 @@ document.addEventListener('DOMContentLoaded', function () {
         arrowIcon.style.transform = isOpen ? 'rotate(-90deg)' : 'rotate(0deg)';
     }
 });
-
