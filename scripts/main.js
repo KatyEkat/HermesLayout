@@ -49,12 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const submenusDesktop = document.querySelectorAll('.header_desk-submenu');
+	// const menuListDesctop = document.querySelectorAll('.header_desktop-main-list');
 
-    document.addEventListener('click', function (event) {
-        const clickedElement = event.target;
+	// function closeAllSubmenus(){
+	// 	menuListDesctop.forEach((submenusDesktop) => {
+	// 		submenusDesktop.style.display = "none"
+	// 	})
+	// }
 
-        const isServicesButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
-        const isAboutButton = clickedElement.closest('.header_desktop-link.header_desctop-arrow-link');
+
+    document.addEventListener('mouseover', function (event) {
+        const hoveredElement = event.target;
+
+        const isServicesButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
+        const isAboutButton = hoveredElement.closest('.header_desktop-link.header_desctop-arrow-link');
 
         if (isServicesButton || isAboutButton) {
             const currentSubmenu = isServicesButton

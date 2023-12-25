@@ -259,6 +259,11 @@
 	text-decoration: none;
 }
 
+.header_mob_link-a:hover{
+	color: #0091CD;
+
+}
+
 .header_desk_link-a:hover{
 	color: #0091CD;
 }

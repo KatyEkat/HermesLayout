@@ -98,6 +98,7 @@
 	.swiper-block {
 		position: relative;
 		height: 393px;
+		cursor: grab;
 	}
 
 	.swiper_img-girl_mob {
@@ -309,7 +310,7 @@
 		top: -107px;
 	}
 
-	.about_main_img-train{
+	.about_main_img-train {
 		top: -55px;
 	}
 
@@ -354,5 +355,4 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 	}
-	
 }
