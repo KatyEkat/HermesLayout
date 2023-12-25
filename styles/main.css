@@ -1174,7 +1174,6 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	text-align: center;
 }
 
 .about_underline-blue {
@@ -1376,6 +1375,7 @@
 
 .study_header {
 	max-width: 411px;
+	text-align: center;
 }
 
 .study_section {
