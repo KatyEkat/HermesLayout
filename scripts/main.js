@@ -61,29 +61,24 @@ const submenu = [
 	[document.querySelector(".header-link-contacts"), null],
 ];
 
-console.log(submenu[0][1].classList.toString());
+const currentArrow = document.querySelector("arrow-link-header-desk");
 let sublink = submenu[0][1];
 let sublinkHover = false;
-console.dir(sublink.classList);
 
 submenu.forEach((sub) => {
-	console.log(sub);
-	sub[0].addEventListener("mouseover", (event) => {
+	sub[0].addEventListener("mouseover", () => {
 		if (sublink.classList.toString() !== sub[1]?.classList.toString()) {
-			console.log(sublink);
 			sublink.classList.remove("active");
 		}
 		sub[1].classList.add("active");
 		sublinkHover = true;
 		if (sub[1]) sublink = sub[1];
 	});
-	sub[1]?.addEventListener("mouseout", (event) => {
+	sub[1]?.addEventListener("mouseover", (event) => {
 		event.stopPropagation();
-
 		sublinkHover = false;
 	});
 });
-document.addEventListener("mouseover", (event) => {
-	console.log(sublinkHover);
+document.addEventListener("mouseover", () => {
 	if (!sublinkHover) sublink.classList.remove("active");
 });

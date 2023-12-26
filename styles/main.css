@@ -154,11 +154,18 @@
 	z-index: 99999999;
 }
 
+.services-checkbox{
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .header_sublinks-about-us {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
 	margin-bottom: 30px;
+	margin-left: -15%;
 }
 
 .gray_triangle-services-desk {
